@@ -35,7 +35,8 @@ INSERT INTO driver_log (name,trav_date,miles)
     ('Henry','2014-07-30',203)
 ;
 
-SELECT * FROM driver_log;
+SELECT * FROM driver_log order by name;
 SELECT * FROM driver_log ORDER BY name, trav_date;
+select name,trav_date,miles as distance from driver_log order by distance;
 
 SELECT name, trav_date, DAYNAME(trav_date) FROM driver_log ORDER BY name, trav_date;
